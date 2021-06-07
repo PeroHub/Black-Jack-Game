@@ -61,6 +61,8 @@ function renderGame() {
         playerEl.textContent = `wow! ${win.name} you just won $${win.chips}`
         message = "Congrats! You've got Blackjack! 🥳"
         hasBlackJack = true
+        let bal = final + win.chips
+        balanceEL.textContent = `Balance: ${bal}`
     } else {
         message = "You're out of the game! 😭"
         playerEl.textContent = `${player.name} you've loose $${player.chips}`
